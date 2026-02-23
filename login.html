@@ -1,1 +1,30 @@
-<!DOCTYPE html><html><body><h1>Login</h1></body></html>
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dealer Portal Login – Fiets Inruil Calculator</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .login{max-width:420px;margin:80px auto;background:#fff;border-radius:14px;box-shadow:0 6px 24px rgba(0,0,0,.07);padding:28px;text-align:center}
+    .login img{height:64px;margin-bottom:10px}
+    .login input{width:100%;padding:12px;margin:8px 0;border:1px solid #cfd6f9;border-radius:8px}
+    .login button{width:100%;padding:12px;border:0;border-radius:10px;background:var(--blue);color:#fff;font-weight:600;cursor:pointer}
+    .login a{color:var(--blue)}
+  </style>
+</head>
+<body>
+  <nav class="top"><div class="container navwrap"><a href="/"><img src="images/logo.png" alt="Fiets Service ID Logo"></a><div class="links"><a href="index.html#video">Demo</a><a href="index.html#voordelen">Voordelen</a></div></div></nav>
+  <div class="login">
+    <img src="images/logo.png" alt="Fiets Service ID Logo">
+    <h2>Dealer Portal Login</h2>
+    <form action="/api/login" method="POST">
+      <input type="email" name="email" placeholder="E-mailadres" required>
+      <input type="password" name="password" placeholder="Wachtwoord" required>
+      <button type="submit">Inloggen</button>
+    </form>
+    <p><a href="#">Wachtwoord vergeten?</a></p>
+  </div>
+  <footer><div class="container"><p>© 2026 Fiets Service ID</p></div></footer>
+</body>
+</html>
