@@ -4,19 +4,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dealer Portal Login – Fiets Inruil Calculator</title>
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+  <link rel="shortcut icon" href="favicon.ico">
   <link rel="stylesheet" href="style.css">
   <style>
-    .login{max-width:420px;margin:80px auto;background:#fff;border-radius:14px;box-shadow:0 6px 24px rgba(0,0,0,.07);padding:28px;text-align:center}
-    .login img{height:64px;margin-bottom:10px}
-    .login input{width:100%;padding:12px;margin:8px 0;border:1px solid #cfd6f9;border-radius:8px}
-    .login button{width:100%;padding:12px;border:0;border-radius:10px;background:var(--blue);color:#fff;font-weight:600;cursor:pointer}
+    .login{max-width:440px;margin:80px auto;background:#fff;border-radius:16px;box-shadow:0 10px 28px rgba(0,0,0,.06);padding:28px;text-align:center}
+    .login img{height:80px;margin-bottom:10px}
+    .login input{width:100%;padding:12px;margin:8px 0;border:1px solid #cfd6f9;border-radius:10px}
+    .login button{width:100%;padding:12px;border:0;border-radius:12px;background:var(--blue);color:#fff;font-weight:700;cursor:pointer}
     .login a{color:var(--blue)}
   </style>
 </head>
 <body>
-  <nav class="top"><div class="container navwrap"><a href="index.html"><img src="logo.png" alt="Fiets Service ID Logo"></a><div class="links"><a href="index.html#video">Demo</a><a href="index.html#voordelen">Voordelen</a></div></div></nav>
+  <nav class="top"><div class="container wrap"><a href="index.html"><img src="images/logo.png" alt="Fiets Service ID Logo"></a><div class="links"><a href="index.html#video">Demo</a><a href="index.html#voordelen">Voordelen</a></div></div></nav>
   <div class="login">
-    <img src="logo.png" alt="Fiets Service ID Logo">
+    <img src="images/logo.png" alt="Fiets Service ID Logo">
     <h2>Dealer Portal Login</h2>
     <form action="/api/login" method="POST">
       <input type="email" name="email" placeholder="E-mailadres" required>
