@@ -18,3 +18,26 @@ ul{font-size:18px;line-height:1.6;padding-left:18px}
 h3{color:#0B6EF3;margin-top:0}
 .price-box{background:#0B6EF3;color:white;padding:20px;border-radius:12px;font-size:22px;font-weight:bold;max-width:380px;margin-top:30px}
 @media(max-width:900px){.hero .inner{flex-direction:column;text-align:center}.grid-two{grid-template-columns:1fr}.grid-two img{margin:auto}}
+.price-highlight {
+    background: #ffe6e6; /* zacht rood */
+    border: 2px solid #ff4d4d; 
+    color: #b30000;
+    padding: 14px 20px;
+    margin: 0;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.price-highlight .star {
+    font-size: 28px;
+    color: #ff0000; /* echt rood */
+}
+
+.price-highlight .price-text strong {
+    color: #b30000;
+}
