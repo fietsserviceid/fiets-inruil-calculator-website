@@ -1,1 +1,11 @@
-body{font-family:Arial;background:#f3f7ff;margin:0} h1{color:#0B6EF3}
+
+body{font-family:Arial;margin:0;background:#f3f7ff;color:#333}
+h1,h2{color:#0B6EF3}
+.container{max-width:1200px;margin:auto;padding:20px}
+.hero{padding:40px 20px;background:#fff;border-bottom:3px solid #e3e9ff}
+.btn{background:#0B6EF3;color:#fff;padding:10px 16px;border-radius:8px;text-decoration:none;font-weight:bold}
+.video-wrapper{position:relative;padding-top:56%;background:#000;border-radius:12px;overflow:hidden}
+.video-wrapper video{position:absolute;inset:0;width:100%;height:100%}
+.grid-two{display:grid;grid-template-columns:1fr 400px;gap:30px;align-items:center}
+.grid-two img{width:100%;max-width:350px;filter:drop-shadow(0 8px 20px rgba(0,0,0,.3))}
+@media(max-width:900px){.grid-two{grid-template-columns:1fr} .grid-two img{margin:auto}}
