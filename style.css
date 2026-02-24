@@ -1,9 +1,10 @@
-/* ===== Responsive basis (toegevoegd) ===== */
+/* ===== Responsive basis ===== */
 *{box-sizing:border-box}
-img,video{max-width:100%;height:auto;display:block}
+img{max-width:100%;height:auto;display:block}
+video{max-width:100%;display:block}
 a.btn{touch-action:manipulation}
 
-/* ===== Jouw bestaande CSS ===== */
+/* ===== Styling ===== */
 body{font-family:Arial,system-ui;margin:0;background:#f3f7ff;color:#2a2f45}
 
 nav{background:#fff;border-bottom:2px solid #e3e9ff;padding:10px 0}
@@ -19,11 +20,13 @@ h1{margin:8px 0;color:#0B6EF3;font-size:40px}
 p.sub{margin:8px 0 16px;font-size:18px;opacity:.9}
 
 .btn{background:#0B6EF3;color:#fff;padding:12px 20px;border-radius:10px;text-decoration:none;font-weight:bold;display:inline-block;margin-top:10px}
+.btn:hover{filter:brightness(.95)}
+.btn:focus-visible{outline:3px solid rgba(11,110,243,.35);outline-offset:3px}
 
 .container{max-width:1200px;margin:auto;padding:20px}
 
 .video-wrapper{position:relative;padding-top:56%;background:#000;border-radius:14px;overflow:hidden;margin-bottom:40px}
-.video-wrapper video{position:absolute;inset:0;width:100%;height:100%}
+.video-wrapper video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 
 .grid-two{display:grid;grid-template-columns:1fr 420px;gap:40px;align-items:center}
 .grid-two img{width:100%;max-width:380px;filter:drop-shadow(0 10px 30px rgba(0,0,0,.25))}
@@ -31,43 +34,25 @@ p.sub{margin:8px 0 16px;font-size:18px;opacity:.9}
 ul{font-size:18px;line-height:1.6;padding-left:18px}
 h3{color:#0B6EF3;margin-top:0}
 
-/* ===== Jouw bestaande breakpoint ===== */
+/* ===== Responsive ===== */
 @media(max-width:900px){
+  .hero{padding:36px 16px}
   .hero .inner{grid-template-columns:1fr;text-align:center}
+  .hero-right{order:-1;}                 /* ster bovenaan */
   .hero-right img.price-star{margin:auto}
+  h1{font-size:clamp(26px, 6vw, 40px)}
+  p.sub{font-size:16px}
   .grid-two{grid-template-columns:1fr}
   .grid-two img{margin:auto}
 }
 
-/* ===== Extra responsive verbeteringen (toegevoegd) ===== */
-
-/* Tablet en kleiner: typografie en spacing iets flexibeler */
-@media(max-width:900px){
-  .hero{padding:36px 16px}
-  h1{font-size:clamp(26px, 6vw, 40px)}
-  p.sub{font-size:16px}
-}
-
-/* Mobiel: nav laten wrappen + knop full width (fijn voor duim) */
 @media(max-width:560px){
   nav .inner{flex-wrap:wrap;gap:10px}
   nav img{height:52px}
   nav .btn{width:100%;text-align:center}
 
-  /* content iets ruimer */
   .container{padding:16px}
-
-  /* hero logo en prijsster wat kleiner */
   .hero-left .logo{height:90px}
-
-  /* buttons prettig op mobiel */
   .btn{width:100%;text-align:center}
-
-  /* grid-two afbeelding niet te groot */
   .grid-two img{max-width:320px}
-}
-
-/* Video: netjes croppen binnen wrapper */
-.video-wrapper video{
-  object-fit:cover;
 }
